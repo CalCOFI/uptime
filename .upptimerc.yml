@@ -87,10 +87,23 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  # Theming nudge toward the calcofi.io palette (--accent #4dabf7). Exact selectors/vars
-  # finalized after first deploy by inspecting the built page; uncomment + refine then:
-  # css: |
-  #   :root { --primary: #4dabf7; }
+  # Match the calcofi.io schema/query dark palette (neutral charcoal + #4dabf7 accent).
+  # :root:root beats the theme's :root regardless of stylesheet load order.
+  # Status colors (up green / down red / degraded yellow) are left at semantic defaults.
+  css: |
+    :root:root {
+      --body-background-color: #1b1d20;
+      --body-text-color: #e6e9ed;
+      --card-background-color: #24272b;
+      --card-border-color: #3a3f44;
+      --nav-background-color: #24272b;
+      --nav-border-bottom-color: #3a3f44;
+      --nav-current-border-bottom-color: #4dabf7;
+      --submit-button-background-color: #4dabf7;
+      --submit-button-border-color: #339af0;
+      --error-button-background-color: #4dabf7;
+      --error-button-border-color: #339af0;
+    }
 
 # Incident issues are auto-assigned (and emailed) to these GitHub users.
 # Anyone who "Watches" CalCOFI/uptime also receives incident notifications.
