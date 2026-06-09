@@ -72,7 +72,7 @@ status-website:
   cname: status.calcofi.io
   name: CalCOFI Status
   introTitle: "CalCOFI Status"
-  introMessage: "Live status of CalCOFI apps and services. Powered by [Upptime](https://upptime.js.org)."
+  introMessage: "Live status of CalCOFI apps and services."
   theme: dark
   logoUrl: https://calcofi.io/schema/assets/logo_calcofi.svg
   favicon: https://calcofi.io/schema/assets/favicon-32x32.png
