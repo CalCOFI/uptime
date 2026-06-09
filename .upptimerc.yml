@@ -10,53 +10,53 @@ repo: uptime
 
 sites:
   # --- production Shiny apps (https://app.calcofi.io/<app>/) ---
-  - name: Oceano
+  - name: Oceano app
     url: https://app.calcofi.io/oceano/
     maxResponseTime: 30000
-  - name: CTD Viz
+  - name: CTD Viz app
     url: https://app.calcofi.io/ctd/
     maxResponseTime: 30000
-  - name: Datacheck
+  - name: Datacheck app
     url: https://app.calcofi.io/datacheck/
     maxResponseTime: 30000
-  - name: Dashboard
+  - name: Dashboard app
     url: https://app.calcofi.io/dashboard/
     maxResponseTime: 30000
-  - name: Copernicus
+  - name: Copernicus app
     url: https://app.calcofi.io/copernicus/
     maxResponseTime: 30000
-  - name: Interactive
+  - name: Integrated app
     url: https://app.calcofi.io/int/
     maxResponseTime: 30000
-  - name: MarMam
+  - name: MarMam app
     url: https://app.calcofi.io/marmam/
     maxResponseTime: 30000
-  - name: Pollutants
+  - name: Pollutants app
     url: https://app.calcofi.io/pollutants/
     maxResponseTime: 30000
-  - name: SaferSeafood
+  - name: SaferSeafood app
     url: https://app.calcofi.io/SaferSeafood/
     maxResponseTime: 30000
-  - name: Capstone
+  - name: Capstone app
     url: https://app.calcofi.io/capstone/
     maxResponseTime: 30000
 
   # --- dev apps (comment out any line to disable) ---
-  - name: Oceano (dev)
-    url: https://app.calcofi.io/oceano-dev/
-    maxResponseTime: 30000
-  - name: Casts
-    url: https://app.calcofi.io/casts/
-    maxResponseTime: 30000
-  - name: Hex Density
-    url: https://app.calcofi.io/hex/
-    maxResponseTime: 30000
-  - name: Taxa (dev)
-    url: https://app.calcofi.io/taxa-dev/
-    maxResponseTime: 30000
-  - name: up2db
-    url: https://app.calcofi.io/up2db/
-    maxResponseTime: 30000
+  #- name: Oceano (dev)
+  #  url: https://app.calcofi.io/oceano-dev/
+  #  maxResponseTime: 30000
+  #- name: Casts
+  #  url: https://app.calcofi.io/casts/
+  #  maxResponseTime: 30000
+  #- name: Hex Density
+  #  url: https://app.calcofi.io/hex/
+  #  maxResponseTime: 30000
+  #- name: Taxa (dev)
+  #  url: https://app.calcofi.io/taxa-dev/
+  #  maxResponseTime: 30000
+  #- name: up2db
+  #  url: https://app.calcofi.io/up2db/
+  #  maxResponseTime: 30000
 
   # --- supporting infrastructure ---
   - name: Shiny server
@@ -65,7 +65,7 @@ sites:
     url: https://tile.calcofi.io/index.json
   - name: File server
     url: https://file.calcofi.io/
-  - name: Main site
+  - name: Home website
     url: https://calcofi.io/
 
 status-website:
