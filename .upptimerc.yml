@@ -104,17 +104,18 @@ status-website:
       --error-button-background-color: #4dabf7;
       --error-button-border-color: #339af0;
     }
-    /* the checked URL, injected under each site name on the homepage (see js below) */
+    /* the checked URL, injected as plain text under each site name (see js below).
+       pointer-events:none lets clicks fall through to the card's stretched history link
+       (Upptime's `article.link a::after` overlay), so the card still opens /history. */
     .cc-url {
       display: block;
       margin: -0.4rem 0 0.6rem 1.7rem;
       font-size: 0.8rem;
       line-height: 1.2;
       color: var(--muted, #9aa0a6);
-      text-decoration: none;
       word-break: break-all;
+      pointer-events: none;
     }
-    .cc-url:hover { color: #4dabf7; text-decoration: underline; }
 
   # Upptime's homepage cards show only the site name (linked to its history page),
   # not the URL being checked. This reads summary.json (slug -> url) and inserts the
@@ -133,9 +134,8 @@ status-website:
           if (!url || url.charAt(0) === "$") continue;
           var h4 = a.closest("h4");
           if (!h4 || h4.parentNode.querySelector(".cc-url")) continue;
-          var el = document.createElement("a");
+          var el = document.createElement("span");
           el.className = "cc-url";
-          el.href = url; el.target = "_blank"; el.rel = "noopener";
           el.textContent = url.replace(/^https?:\/\//, "");
           h4.insertAdjacentElement("afterend", el);
         }
