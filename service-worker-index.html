@@ -1,27 +1,90 @@
-<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={baseUrl:"",preloaded:[void 0]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.d2e2254a.js"}catch(e){main="/client/legacy/client.f1a93b2f.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet><link href=client/createOctokit-a85f76c7.css rel=stylesheet><link href=client/index-b0b6455a.css rel=stylesheet> <link href=https://status.calcofi.io/themes/dark.css rel=stylesheet><link href=https://status.calcofi.io/global.css rel=stylesheet><link href=https://calcofi.io/schema/assets/favicon-32x32.png rel=icon type=image/svg><link href=https://calcofi.io/schema/assets/favicon-32x32.png rel=icon type=image/png><style>:root:root{--body-background-color:#1b1d20;--body-text-color:#e6e9ed;--card-background-color:#24272b;--card-border-color:#3a3f44;--nav-background-color:#24272b;--nav-border-bottom-color:#3a3f44;--nav-current-border-bottom-color:#4dabf7;--submit-button-background-color:#4dabf7;--submit-button-border-color:#339af0;--error-button-background-color:#4dabf7;--error-button-border-color:#339af0}.cc-url{display:block;margin:-.4rem 0 .6rem 1.7rem;font-size:.8rem;line-height:1.2;color:var(--muted,#9aa0a6);word-break:break-all;pointer-events:none}.cc-url-link{display:inline-block;margin:-.5rem 0 1rem;font-size:.9rem;color:#4dabf7;word-break:break-all}.cc-url-link:hover{text-decoration:underline}</style><script>(function () {
-  var SRC = "https://raw.githubusercontent.com/CalCOFI/uptime/master/history/summary.json";
-  var bySlug = {};
+<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={baseUrl:"",preloaded:[void 0]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.e9b885e9.js"}catch(e){main="/client/legacy/client.2a54c54f.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet><link href=client/createOctokit-a85f76c7.css rel=stylesheet><link href=client/index-b0b6455a.css rel=stylesheet> <link href=https://status.calcofi.io/themes/dark.css rel=stylesheet><link href=https://status.calcofi.io/global.css rel=stylesheet><link href=https://calcofi.io/schema/assets/favicon-32x32.png rel=icon type=image/svg><link href=https://calcofi.io/schema/assets/favicon-32x32.png rel=icon type=image/png><style>:root:root{--body-background-color:#1b1d20;--body-text-color:#e6e9ed;--card-background-color:#24272b;--card-border-color:#3a3f44;--nav-background-color:#24272b;--nav-border-bottom-color:#3a3f44;--nav-current-border-bottom-color:#4dabf7;--submit-button-background-color:#4dabf7;--submit-button-border-color:#339af0;--error-button-background-color:#4dabf7;--error-button-border-color:#339af0}.cc-url{display:block;margin:-.4rem 0 .6rem 1.7rem;font-size:.8rem;line-height:1.2;color:var(--muted,#9aa0a6);word-break:break-all;pointer-events:none}.cc-url-link{display:inline-block;margin:-.5rem 0 1rem;font-size:.9rem;color:#4dabf7;word-break:break-all}.cc-url-link:hover{text-decoration:underline}.cc-checked,.cc-checked-site{font-size:.85rem;color:var(--muted,#9aa0a6)}.cc-checked{margin:0 0 .85rem}.cc-checked-site{margin:-.4rem 0 1.25rem}</style><script>(function () {
+  var BASE = "https://raw.githubusercontent.com/CalCOFI/uptime/master/history/";
+  var siteBy = {};   // slug -> summary object (url, time, timeDay, ...)
+  var yml = {};      // slug -> { lastUpdated, code } | "pending"
+  var DUR = { day: "timeDay", week: "timeWeek", month: "timeMonth", year: "timeYear", all: "time" };
+
+  function toSeconds(ms) { return (ms / 1000).toFixed(2) + " s"; }
+  function fmtTime(iso) {
+    try {
+      return new Date(iso).toLocaleString(undefined,
+        { dateStyle: "medium", timeStyle: "short", timeZoneName: "short" });
+    } catch (e) { return iso; }
+  }
+  function ensureYml(slug) {
+    if (yml[slug]) return;            // already fetching or fetched
+    yml[slug] = "pending";
+    fetch(BASE + slug + ".yml").then(function (r) { return r.text(); }).then(function (t) {
+      var info = {};
+      var lu = t.match(/lastUpdated:\s*(\S+)/); if (lu) info.lastUpdated = lu[1];
+      var c = t.match(/(^|\n)code:\s*(\d+)/); if (c) info.code = c[2];
+      yml[slug] = info;
+      decorate();                     // re-run once data is in (idempotent)
+    }).catch(function () { yml[slug] = {}; });
+  }
+
   function decorate() {
-    var links = document.querySelectorAll("section.live-status article h4 a[href*='/history/']");
-    for (var i = 0; i < links.length; i++) {
-      var a = links[i];
-      var m = a.getAttribute("href").match(/\/history\/([^\/?#]+)/);
-      if (!m) continue;
-      var url = bySlug[m[1]];
-      if (!url || url.charAt(0) === "$") continue;
-      var h4 = a.closest("h4");
-      if (!h4 || h4.parentNode.querySelector(".cc-url")) continue;
-      var el = document.createElement("span");
-      el.className = "cc-url";
-      el.textContent = url.replace(/^https?:\/\//, "");
-      h4.insertAdjacentElement("afterend", el);
+    // ---------- homepage ----------
+    var cards = document.querySelectorAll("section.live-status article");
+    if (cards.length) {
+      var sel = document.querySelector("section.live-status input[name='d']:checked");
+      var field = DUR[sel ? sel.value : "week"] || "time";
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var a = card.querySelector("h4 a[href*='/history/']");
+        if (!a) continue;
+        var m = a.getAttribute("href").match(/\/history\/([^\/?#]+)/);
+        if (!m) continue;
+        var site = siteBy[m[1]];
+        if (!site) continue;
+        // URL under the name (plain text; card still opens /history)
+        var h4 = a.closest("h4");
+        if (site.url && site.url.charAt(0) !== "$" && h4 && !card.querySelector(".cc-url")) {
+          var sp = document.createElement("span");
+          sp.className = "cc-url";
+          sp.textContent = site.url.replace(/^https?:\/\//, "");
+          h4.insertAdjacentElement("afterend", sp);
+        }
+        // response time -> seconds (response time is the last .data span)
+        var ds = card.querySelectorAll(".data");
+        if (ds.length >= 2) {
+          var ms = typeof site[field] === "number" ? site[field] : site.time;
+          var sec = toSeconds(ms);
+          if (ds[ds.length - 1].textContent !== sec) ds[ds.length - 1].textContent = sec;
+        }
+      }
+      // global "last checked" (use the last-listed site ~ end of the check run)
+      var slugs = Object.keys(siteBy);
+      if (slugs.length && !document.querySelector(".cc-checked")) {
+        var last = slugs[slugs.length - 1];
+        ensureYml(last);
+        var g = yml[last];
+        if (g && g !== "pending" && g.lastUpdated) {
+          var ls = document.querySelector("section.live-status");
+          if (ls) {
+            var p = document.createElement("p");
+            p.className = "cc-checked";
+            p.textContent = "Last checked " + fmtTime(g.lastUpdated);
+            var f = ls.parentNode.querySelector("div.f");
+            ls.parentNode.insertBefore(p, f || ls);
+          }
+        }
+      }
     }
-    // per-site history page: add the checked URL as a clickable link under the title
+
+    // ---------- per-site history page ----------
+    // response time in the Summary stat list -> seconds
+    var dds = document.querySelectorAll("section dl dd");
+    for (var j = 0; j < dds.length; j++) {
+      var mm = dds[j].textContent.match(/^(\d[\d,]*)\s*ms\b/);
+      if (mm) dds[j].textContent = toSeconds(parseInt(mm[1].replace(/,/g, ""), 10));
+    }
+    // clickable URL under the title
     var titleLink = document.querySelector("section h1 a.no-underline[href^='http']");
     if (titleLink) {
       var h1 = titleLink.closest("h1");
-      var next = h1 && h1.nextElementSibling;
-      if (h1 && !(next && next.classList.contains("cc-url-link"))) {
+      var nx = h1 && h1.nextElementSibling;
+      if (h1 && !(nx && nx.classList.contains("cc-url-link"))) {
         var u = titleLink.getAttribute("href");
         var link = document.createElement("a");
         link.className = "cc-url-link";
@@ -30,13 +93,28 @@
         h1.insertAdjacentElement("afterend", link);
       }
     }
+    // "last checked" for this site, with timezone
+    var hm = location.pathname.match(/\/history\/([^\/?#]+)/);
+    if (hm && document.querySelector("section dl") && !document.querySelector(".cc-checked-site")) {
+      var slug = hm[1];
+      ensureYml(slug);
+      var info = yml[slug];
+      if (info && info !== "pending" && info.lastUpdated) {
+        var dl = document.querySelector("section dl");
+        var ps = document.createElement("p");
+        ps.className = "cc-checked-site";
+        ps.textContent = "Last checked " + fmtTime(info.lastUpdated) + (info.code ? "  ·  HTTP " + info.code : "");
+        dl.insertAdjacentElement("afterend", ps);
+      }
+    }
   }
-  fetch(SRC).then(function (r) { return r.json(); }).then(function (sites) {
-    sites.forEach(function (s) { bySlug[s.slug] = s.url; });
+
+  fetch(BASE + "summary.json").then(function (r) { return r.json(); }).then(function (sites) {
+    sites.forEach(function (s) { siteBy[s.slug] = s; });
     decorate();
     new MutationObserver(decorate).observe(document.body, { childList: true, subtree: true });
   }).catch(function () {});
-})(); </script> <link href=/client/client.d2e2254a.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-31a52aa5.css rel=preload as=style><link href=/client/index.ee0b26b9.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit.0f065b03.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.803b7e80.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit-a85f76c7.css rel=preload as=style><link href=/client/index-b0b6455a.css rel=preload as=style></head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"><div><a href=https://status.calcofi.io class="svelte-a08hsz logo"><img alt="" class=svelte-a08hsz src=https://calcofi.io/schema/assets/logo_calcofi.svg> <div>CalCOFI Status</div></a></div> <ul class=svelte-a08hsz><li><a href=https://calcofi.io class=svelte-a08hsz target=_self>Home</a> <li><a href=https://calcofi.io/schema class=svelte-a08hsz target=_self>Schema</a> <li><a href=https://calcofi.io/query class=svelte-a08hsz target=_self>Query</a> <li><a href=/ class=svelte-a08hsz target=_self>Status</a> <li><a href=https://github.com/CalCOFI/uptime class=svelte-a08hsz target=_self>GitHub</a> </li> </ul></div> </nav> <main class=container></main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/CalCOFI/uptime>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
+})(); </script> <link href=/client/client.e9b885e9.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-31a52aa5.css rel=preload as=style><link href=/client/index.3fed2905.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit.1277b114.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.803b7e80.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit-a85f76c7.css rel=preload as=style><link href=/client/index-b0b6455a.css rel=preload as=style></head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"><div><a href=https://status.calcofi.io class="svelte-a08hsz logo"><img alt="" class=svelte-a08hsz src=https://calcofi.io/schema/assets/logo_calcofi.svg> <div>CalCOFI Status</div></a></div> <ul class=svelte-a08hsz><li><a href=https://calcofi.io class=svelte-a08hsz target=_self>Home</a> <li><a href=https://calcofi.io/schema class=svelte-a08hsz target=_self>Schema</a> <li><a href=https://calcofi.io/query class=svelte-a08hsz target=_self>Query</a> <li><a href=/ class=svelte-a08hsz target=_self>Status</a> <li><a href=https://github.com/CalCOFI/uptime class=svelte-a08hsz target=_self>GitHub</a> </li> </ul></div> </nav> <main class=container></main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/CalCOFI/uptime>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
         if (typeof window !== "undefined" && window.navigator && navigator.serviceWorker) {
           navigator.serviceWorker.getRegistrations().then(function (registrations) {
             for (let registration of registrations) {
