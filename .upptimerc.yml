@@ -1,12 +1,25 @@
 # CalCOFI uptime monitor & status page — https://status.calcofi.io
 # Configuration reference: https://upptime.js.org/docs/configuration
 #
+# *** EXTERNAL DEPENDENCY — not obvious from this repo alone (see OPERATIONS.md) ***
+# Uptime checks are triggered every 15 min by a GCP Cloud Scheduler job, NOT by GitHub's
+# cron (GitHub silently drops most scheduled runs on public repos). The job
+# `calcofi-uptime-dispatch` (GCP project `ucsd-sio-calcofi`, region us-central1) POSTs
+# `{"event_type":"uptime"}` to this repo's dispatches API, firing the "Uptime CI"
+# workflow's `repository_dispatch: [uptime]` trigger. If checks stop updating, look there.
+#
 # To disable a check: comment out (#) its `- name:` block below.
 # `maxResponseTime` (ms) sets the "degraded" (slow-but-up) threshold; Shiny apps
 # cold-start in ~11-16s, so 30000 keeps them green while flagging genuinely stuck loads.
 
 owner: CalCOFI
 repo: uptime
+
+# GitHub's native cron is only a low-frequency fallback (it drops most scheduled runs);
+# the real 15-min cadence comes from Cloud Scheduler (see note above). Keeping this daily
+# also stops frequent uptime runs from starving the daily graph/summary workflows.
+workflowSchedule:
+  uptime: "0 12 * * *" # daily fallback only — Cloud Scheduler drives the real cadence
 
 sites:
   # --- production Shiny apps (https://app.calcofi.io/<app>/) ---
