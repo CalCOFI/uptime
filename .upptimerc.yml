@@ -70,7 +70,7 @@ sites:
 
 status-website:
   cname: status.calcofi.io
-  name: CalCOFI.io Status
+  name: CalCOFI.io
   introTitle: "CalCOFI.io Status"
   introMessage: "Live status of CalCOFI.io apps and services."
   theme: dark
