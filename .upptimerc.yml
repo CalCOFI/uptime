@@ -13,7 +13,7 @@ sites:
   - name: Oceano app
     url: https://app.calcofi.io/oceano/
     maxResponseTime: 30000
-  - name: CTD Viz app
+  - name: CTD app
     url: https://app.calcofi.io/ctd/
     maxResponseTime: 30000
   - name: Datacheck app
