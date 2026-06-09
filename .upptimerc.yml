@@ -116,6 +116,15 @@ status-website:
       word-break: break-all;
       pointer-events: none;
     }
+    /* clickable URL on the per-site history page (no stretched-link conflict there) */
+    .cc-url-link {
+      display: inline-block;
+      margin: -0.5rem 0 1rem;
+      font-size: 0.9rem;
+      color: #4dabf7;
+      word-break: break-all;
+    }
+    .cc-url-link:hover { text-decoration: underline; }
 
   # Upptime's homepage cards show only the site name (linked to its history page),
   # not the URL being checked. This reads summary.json (slug -> url) and inserts the
@@ -138,6 +147,20 @@ status-website:
           el.className = "cc-url";
           el.textContent = url.replace(/^https?:\/\//, "");
           h4.insertAdjacentElement("afterend", el);
+        }
+        // per-site history page: add the checked URL as a clickable link under the title
+        var titleLink = document.querySelector("section h1 a.no-underline[href^='http']");
+        if (titleLink) {
+          var h1 = titleLink.closest("h1");
+          var next = h1 && h1.nextElementSibling;
+          if (h1 && !(next && next.classList.contains("cc-url-link"))) {
+            var u = titleLink.getAttribute("href");
+            var link = document.createElement("a");
+            link.className = "cc-url-link";
+            link.href = u; link.target = "_blank"; link.rel = "noopener";
+            link.textContent = u.replace(/^https?:\/\//, "");
+            h1.insertAdjacentElement("afterend", link);
+          }
         }
       }
       fetch(SRC).then(function (r) { return r.json(); }).then(function (sites) {
