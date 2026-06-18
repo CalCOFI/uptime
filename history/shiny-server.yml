@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/
-status: up
-code: 200
-responseTime: 147
-lastUpdated: 2026-06-18T00:17:28.393Z
+status: down
+code: 500
+responseTime: 164
+lastUpdated: 2026-06-18T16:47:16.901Z
 startTime: 2026-06-08T15:37:40.998Z
 generator: Upptime <https://github.com/upptime/upptime>
