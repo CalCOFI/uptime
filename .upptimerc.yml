@@ -85,7 +85,7 @@ status-website:
   cname: status.calcofi.io
   name: CalCOFI.io
   introTitle: "CalCOFI.io Status"
-  introMessage: "Live status of CalCOFI.io apps and services."
+  introMessage: "Live status of CalCOFI.io apps and services based on checks every 15 minutes."
   theme: dark
   logoUrl: https://calcofi.io/schema/assets/logo_calcofi.svg
   favicon: https://calcofi.io/schema/assets/favicon-32x32.png
