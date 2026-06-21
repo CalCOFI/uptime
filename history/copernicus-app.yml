@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/copernicus/
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-06-21T01:24:50.206Z
+status: up
+code: 200
+responseTime: 11743
+lastUpdated: 2026-06-21T02:05:17.708Z
 startTime: 2026-06-09T08:27:13.486Z
 generator: Upptime <https://github.com/upptime/upptime>
