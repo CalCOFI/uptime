@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "oceano-app",
     "status": "up",
-    "uptime": "99.45%",
+    "uptime": "99.46%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.02%",
-    "uptimeMonth": "99.45%",
-    "uptimeYear": "99.45%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.46%",
     "time": 11048,
     "timeDay": 11405,
     "timeWeek": 11484,
@@ -196,11 +196,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "capstone-app",
     "status": "down",
-    "uptime": "99.88%",
-    "uptimeDay": "99.45%",
-    "uptimeWeek": "99.75%",
-    "uptimeMonth": "99.88%",
-    "uptimeYear": "99.88%",
+    "uptime": "99.80%",
+    "uptimeDay": "98.32%",
+    "uptimeWeek": "99.59%",
+    "uptimeMonth": "99.80%",
+    "uptimeYear": "99.80%",
     "time": 22669,
     "timeDay": 23539,
     "timeWeek": 23740,
@@ -208,7 +208,7 @@
     "timeYear": 22669,
     "dailyMinutesDown": {
       "2026-06-21": 17,
-      "2026-06-23": 8
+      "2026-06-23": 24
     }
   },
   {
@@ -217,11 +217,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "shiny-server",
     "status": "down",
-    "uptime": "99.85%",
-    "uptimeDay": "99.78%",
-    "uptimeWeek": "99.67%",
-    "uptimeMonth": "99.85%",
-    "uptimeYear": "99.85%",
+    "uptime": "99.78%",
+    "uptimeDay": "98.66%",
+    "uptimeWeek": "99.51%",
+    "uptimeMonth": "99.78%",
+    "uptimeYear": "99.78%",
     "time": 178,
     "timeDay": 143,
     "timeWeek": 168,
@@ -229,7 +229,7 @@
     "timeYear": 178,
     "dailyMinutesDown": {
       "2026-06-18": 30,
-      "2026-06-23": 3
+      "2026-06-23": 19
     }
   },
   {
@@ -237,9 +237,9 @@
     "url": "https://tile.calcofi.io/index.json",
     "icon": "https://icons.duckduckgo.com/ip3/tile.calcofi.io.ico",
     "slug": "tile-server",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -248,7 +248,9 @@
     "timeWeek": 259,
     "timeMonth": 231,
     "timeYear": 231,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-06-23": 0
+    }
   },
   {
     "name": "File server",
