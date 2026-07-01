@@ -48,11 +48,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "datacheck-app",
     "status": "down",
-    "uptime": "99.70%",
-    "uptimeDay": "99.89%",
-    "uptimeWeek": "99.98%",
-    "uptimeMonth": "99.70%",
-    "uptimeYear": "99.70%",
+    "uptime": "99.64%",
+    "uptimeDay": "98.48%",
+    "uptimeWeek": "99.78%",
+    "uptimeMonth": "99.64%",
+    "uptimeYear": "99.64%",
     "time": 11446,
     "timeDay": 5969,
     "timeWeek": 10212,
@@ -61,7 +61,7 @@
     "dailyMinutesDown": {
       "2026-06-19": 43,
       "2026-06-21": 50,
-      "2026-07-01": 2
+      "2026-07-01": 22
     }
   },
   {
@@ -112,11 +112,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "integrated-app",
     "status": "down",
-    "uptime": "99.79%",
-    "uptimeDay": "99.93%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.79%",
-    "uptimeYear": "99.79%",
+    "uptime": "99.73%",
+    "uptimeDay": "98.52%",
+    "uptimeWeek": "99.79%",
+    "uptimeMonth": "99.73%",
+    "uptimeYear": "99.73%",
     "time": 15483,
     "timeDay": 7875,
     "timeWeek": 13954,
@@ -125,7 +125,7 @@
     "dailyMinutesDown": {
       "2026-06-19": 30,
       "2026-06-21": 36,
-      "2026-07-01": 1
+      "2026-07-01": 21
     }
   },
   {
@@ -218,20 +218,21 @@
     "url": "https://app.calcofi.io/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "shiny-server",
-    "status": "up",
+    "status": "down",
     "uptime": "99.84%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.84%",
     "uptimeYear": "99.84%",
-    "time": 176,
-    "timeDay": 91,
-    "timeWeek": 172,
-    "timeMonth": 176,
-    "timeYear": 176,
+    "time": 173,
+    "timeDay": 76,
+    "timeWeek": 158,
+    "timeMonth": 173,
+    "timeYear": 173,
     "dailyMinutesDown": {
       "2026-06-18": 30,
-      "2026-06-23": 22
+      "2026-06-23": 22,
+      "2026-07-01": 0
     }
   },
   {
