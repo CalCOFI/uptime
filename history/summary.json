@@ -47,21 +47,21 @@
     "url": "https://app.calcofi.io/db-viz-cruise/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "datacheck-app",
-    "status": "down",
-    "uptime": "99.64%",
-    "uptimeDay": "98.48%",
-    "uptimeWeek": "99.78%",
-    "uptimeMonth": "99.64%",
-    "uptimeYear": "99.64%",
-    "time": 11446,
-    "timeDay": 5969,
-    "timeWeek": 10212,
-    "timeMonth": 11446,
-    "timeYear": 11446,
+    "status": "up",
+    "uptime": "99.32%",
+    "uptimeDay": "91.29%",
+    "uptimeWeek": "98.76%",
+    "uptimeMonth": "99.32%",
+    "uptimeYear": "99.32%",
+    "time": 11177,
+    "timeDay": 4220,
+    "timeWeek": 9157,
+    "timeMonth": 11177,
+    "timeYear": 11177,
     "dailyMinutesDown": {
       "2026-06-19": 43,
       "2026-06-21": 50,
-      "2026-07-01": 22
+      "2026-07-01": 125
     }
   },
   {
@@ -111,21 +111,21 @@
     "url": "https://app.calcofi.io/db-viz-hex/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "integrated-app",
-    "status": "down",
-    "uptime": "99.73%",
-    "uptimeDay": "98.52%",
-    "uptimeWeek": "99.79%",
-    "uptimeMonth": "99.73%",
-    "uptimeYear": "99.73%",
-    "time": 15483,
-    "timeDay": 7875,
-    "timeWeek": 13954,
-    "timeMonth": 15483,
-    "timeYear": 15483,
+    "status": "up",
+    "uptime": "99.41%",
+    "uptimeDay": "91.30%",
+    "uptimeWeek": "98.76%",
+    "uptimeMonth": "99.41%",
+    "uptimeYear": "99.41%",
+    "time": 15119,
+    "timeDay": 5434,
+    "timeWeek": 12735,
+    "timeMonth": 15119,
+    "timeYear": 15119,
     "dailyMinutesDown": {
       "2026-06-19": 30,
       "2026-06-21": 36,
-      "2026-07-01": 21
+      "2026-07-01": 125
     }
   },
   {
@@ -219,11 +219,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "shiny-server",
     "status": "down",
-    "uptime": "99.84%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.84%",
-    "uptimeYear": "99.84%",
+    "uptime": "99.53%",
+    "uptimeDay": "92.70%",
+    "uptimeWeek": "98.96%",
+    "uptimeMonth": "99.53%",
+    "uptimeYear": "99.53%",
     "time": 173,
     "timeDay": 76,
     "timeWeek": 158,
@@ -232,7 +232,7 @@
     "dailyMinutesDown": {
       "2026-06-18": 30,
       "2026-06-23": 22,
-      "2026-07-01": 0
+      "2026-07-01": 105
     }
   },
   {
