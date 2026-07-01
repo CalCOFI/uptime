@@ -30,7 +30,7 @@ sites:
     url: https://app.calcofi.io/ctd/
     maxResponseTime: 30000
   - name: Datacheck app
-    url: https://app.calcofi.io/datacheck/
+    url: https://app.calcofi.io/db-viz-cruise/
     maxResponseTime: 30000
   - name: Dashboard app
     url: https://app.calcofi.io/dashboard/
@@ -39,7 +39,7 @@ sites:
     url: https://app.calcofi.io/copernicus/
     maxResponseTime: 30000
   - name: Integrated app
-    url: https://app.calcofi.io/int/
+    url: https://app.calcofi.io/db-viz-hex/
     maxResponseTime: 30000
   - name: MarMam app
     url: https://app.calcofi.io/marmam/
@@ -87,15 +87,15 @@ status-website:
   introTitle: "CalCOFI.io Status"
   introMessage: "Live status of CalCOFI.io apps and services based on checks every 15 minutes."
   theme: dark
-  logoUrl: https://calcofi.io/schema/assets/logo_calcofi.svg
-  favicon: https://calcofi.io/schema/assets/favicon-32x32.png
+  logoUrl: https://calcofi.io/db-schema/assets/logo_calcofi.svg
+  favicon: https://calcofi.io/db-schema/assets/favicon-32x32.png
   navbar:
     - title: Home
       href: https://calcofi.io
     - title: Schema
-      href: https://calcofi.io/schema
+      href: https://calcofi.io/db-schema
     - title: Query
-      href: https://calcofi.io/query
+      href: https://calcofi.io/db-query
     - title: Status
       href: /
     - title: GitHub
