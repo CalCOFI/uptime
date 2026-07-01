@@ -49,8 +49,8 @@
     "slug": "datacheck-app",
     "status": "down",
     "uptime": "99.70%",
-    "uptimeDay": "99.91%",
-    "uptimeWeek": "99.99%",
+    "uptimeDay": "99.89%",
+    "uptimeWeek": "99.98%",
     "uptimeMonth": "99.70%",
     "uptimeYear": "99.70%",
     "time": 11446,
@@ -61,7 +61,7 @@
     "dailyMinutesDown": {
       "2026-06-19": 43,
       "2026-06-21": 50,
-      "2026-07-01": 1
+      "2026-07-01": 2
     }
   },
   {
@@ -113,7 +113,7 @@
     "slug": "integrated-app",
     "status": "down",
     "uptime": "99.79%",
-    "uptimeDay": "99.94%",
+    "uptimeDay": "99.93%",
     "uptimeWeek": "99.99%",
     "uptimeMonth": "99.79%",
     "uptimeYear": "99.79%",
