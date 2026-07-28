@@ -43,6 +43,26 @@ deploy you may need a hard refresh to see changes. Several tweaks (URL under eac
 times in seconds, "Last checked … PT" line) are custom `status-website.css`/`js` injected from
 `.upptimerc.yml`.
 
+## Site names, slugs, and what a rename destroys
+
+Every `name` in `.upptimerc.yml` is the **canonical repo/app name** — the same identifier used by the
+card on calcofi.io, the repo, and the product's usage report. Each entry also **pins `slug:`**
+explicitly, rather than letting Upptime derive it: its slugify decamelizes and splits digits (which
+is how `MarMam app` became `mar-mam-app`), so an underived slug can move a URL that calcofi.io links
+to. With `slug` pinned, a display-name edit is free.
+
+**Changing a slug deletes that service's history.** Upptime's template step prunes any
+`history/<slug>.yml`, `api/<slug>/` and `graphs/<slug>/` not matching a current slug. If you must
+rename:
+
+1. `git mv history/<old>.yml history/<new>.yml` **in the same commit** — this keeps `startTime`, and
+   stops the prune step from deleting it.
+2. Expect the uptime **percentage** to reset regardless: it is computed from the commits touching
+   `history/<slug>.yml`, and GitHub's commits-by-path listing does not follow renames.
+3. Incident issues are labelled `status,<old-slug>`, so past incidents stop being attributed.
+
+Adding a site is free — its history file is created on the next run and its uptime starts then.
+
 ## Gotcha: Static Site CI badge / concurrency
 
 All Upptime workflows share one concurrency group (`<repo>-<ref>-upptime`), so a manually-dispatched

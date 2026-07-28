@@ -21,37 +21,54 @@ repo: uptime
 workflowSchedule:
   uptime: "0 12 * * *" # daily fallback only — Cloud Scheduler drives the real cadence
 
+# Every `name` is the canonical repo/app name, matching the card on calcofi.io
+# and the product's `usage` report — one identifier per product, everywhere.
+#
+# `slug` is PINNED rather than left to Upptime's slugify: it decamelizes and
+# splits digits (which is how `MarMam app` became `mar-mam-app`), so an
+# unpinned name would silently move a URL that calcofi.io links to. Pinning
+# also means a future display-name edit can never prune history/.
+#
+# CHANGING A SLUG DELETES ITS HISTORY: Upptime prunes history/<old>.yml and
+# restarts the uptime %. If you must rename, `git mv` the history file in the
+# same commit to keep its startTime, and expect the percentage to reset anyway.
 sites:
-  # --- production Shiny apps (https://app.calcofi.io/<app>/) ---
-  - name: Oceano app
-    url: https://app.calcofi.io/oceano/
-    maxResponseTime: 30000
-  - name: CTD app
-    url: https://app.calcofi.io/ctd/
-    maxResponseTime: 30000
-  - name: Datacheck app
-    url: https://app.calcofi.io/db-viz-cruise/
-    maxResponseTime: 30000
-  - name: Dashboard app
-    url: https://app.calcofi.io/dashboard/
-    maxResponseTime: 30000
-  - name: Copernicus app
-    url: https://app.calcofi.io/copernicus/
-    maxResponseTime: 30000
-  - name: Integrated app
+  # --- apps (https://app.calcofi.io/<app>/) ---
+  - name: db-viz-hex
+    slug: db-viz-hex
     url: https://app.calcofi.io/db-viz-hex/
     maxResponseTime: 30000
-  - name: MarMam app
-    url: https://app.calcofi.io/marmam/
+  - name: db-viz-cruise
+    slug: db-viz-cruise
+    url: https://app.calcofi.io/db-viz-cruise/
     maxResponseTime: 30000
-  - name: Pollutants app
+  - name: ctd-viz
+    slug: ctd-viz
+    url: https://app.calcofi.io/ctd/
+    maxResponseTime: 30000
+  - name: oceano
+    slug: oceano
+    url: https://app.calcofi.io/oceano/
+    maxResponseTime: 30000
+  - name: pollutants
+    slug: pollutants
     url: https://app.calcofi.io/pollutants/
     maxResponseTime: 30000
-  - name: SaferSeafood app
-    url: https://app.calcofi.io/SaferSeafood/
+  - name: marmam
+    slug: marmam
+    url: https://app.calcofi.io/marmam/
     maxResponseTime: 30000
-  - name: Capstone app
+  - name: saferseafood
+    slug: saferseafood
+    url: https://app.calcofi.io/SaferSeafood/   # path is case-sensitive
+    maxResponseTime: 30000
+  - name: capstone
+    slug: capstone
     url: https://app.calcofi.io/capstone/
+    maxResponseTime: 30000
+  - name: ucsb-larvae-dashboard
+    slug: ucsb-larvae-dashboard
+    url: https://app.calcofi.io/2026-ucsb-larvae-dashboard/
     maxResponseTime: 30000
 
   # --- dev apps (comment out any line to disable) ---
@@ -71,14 +88,55 @@ sites:
   #  url: https://app.calcofi.io/up2db/
   #  maxResponseTime: 30000
 
-  # --- supporting infrastructure ---
-  - name: Shiny server
+  # --- services ---
+  - name: erddap
+    slug: erddap
+    url: https://erddap.calcofi.io/erddap/index.html   # the root only redirects
+  - name: storage
+    slug: storage
+    url: https://storage.calcofi.io/
+
+  # --- GitHub Pages sites under calcofi.io/<repo>/ ---
+  - name: db-viz-station
+    slug: db-viz-station
+    url: https://calcofi.io/db-viz-station/
+  - name: db-query
+    slug: db-query
+    url: https://calcofi.io/db-query/
+  - name: db-schema
+    slug: db-schema
+    url: https://calcofi.io/db-schema/
+  - name: workflows
+    slug: workflows
+    url: https://calcofi.io/workflows/
+  - name: docs
+    slug: docs
+    url: https://calcofi.io/docs/
+  - name: calcofi4r
+    slug: calcofi4r
+    url: https://calcofi.io/calcofi4r/
+  - name: calcofi4db
+    slug: calcofi4db
+    url: https://calcofi.io/calcofi4db/
+  - name: ucla-monitoring-map
+    slug: ucla-monitoring-map
+    url: https://calcofi.io/2026-ucla-cal-ocean-coastal-monitoring-map/
+  - name: ucsb-station-portal
+    slug: ucsb-station-portal
+    url: https://calcofi.io/2026-ucsb-station-data-portal/
+  - name: hypoxia-story
+    slug: hypoxia-story
+    url: https://calcofi.io/hypoxia-story/
+
+  # --- supporting infrastructure (no card on calcofi.io) ---
+  - name: shiny-server
+    slug: shiny-server
     url: https://app.calcofi.io/
-  - name: Tile server
-    url: https://tile.calcofi.io/index.json
-  - name: File server
+  - name: file-server
+    slug: file-server
     url: https://file.calcofi.io/
-  - name: Home website
+  - name: home-website
+    slug: home-website
     url: https://calcofi.io/
 
 status-website:
@@ -154,7 +212,9 @@ status-website:
   #   - "last checked" timestamp in the viewer's timezone (homepage global + per-site)
   js: |
     (function () {
-      var BASE = "https://raw.githubusercontent.com/CalCOFI/uptime/master/history/";
+      // must track the DEFAULT BRANCH — this read `master`, which only still
+      // resolved via GitHub's branch-rename redirect.
+      var BASE = "https://raw.githubusercontent.com/CalCOFI/uptime/main/history/";
       var siteBy = {};   // slug -> summary object (url, time, timeDay, ...)
       var yml = {};      // slug -> { lastUpdated, code } | "pending"
       var DUR = { day: "timeDay", week: "timeWeek", month: "timeMonth", year: "timeYear", all: "time" };
