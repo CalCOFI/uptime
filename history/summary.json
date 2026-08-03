@@ -4,19 +4,19 @@
     "url": "https://app.calcofi.io/db-viz-hex/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "db-viz-hex",
-    "status": "degraded",
-    "uptime": "99.99%",
-    "uptimeDay": "99.71%",
-    "uptimeWeek": "99.96%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 21043,
-    "timeDay": 30496,
-    "timeWeek": 21043,
-    "timeMonth": 21043,
-    "timeYear": 21043,
+    "status": "up",
+    "uptime": "99.98%",
+    "uptimeDay": "99.05%",
+    "uptimeWeek": "99.86%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.98%",
+    "time": 21788,
+    "timeDay": 30245,
+    "timeWeek": 21788,
+    "timeMonth": 21788,
+    "timeYear": 21788,
     "dailyMinutesDown": {
-      "2026-08-03": 4
+      "2026-08-03": 14
     }
   },
   {
