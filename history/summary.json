@@ -4,19 +4,19 @@
     "url": "https://app.calcofi.io/db-viz-hex/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "db-viz-hex",
-    "status": "down",
+    "status": "up",
     "uptime": "99.96%",
-    "uptimeDay": "97.76%",
+    "uptimeDay": "97.73%",
     "uptimeWeek": "99.68%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.96%",
-    "time": 20446,
-    "timeDay": 25168,
-    "timeWeek": 20446,
-    "timeMonth": 20446,
-    "timeYear": 20446,
+    "time": 19035,
+    "timeDay": 20273,
+    "timeWeek": 19035,
+    "timeMonth": 19035,
+    "timeYear": 19035,
     "dailyMinutesDown": {
-      "2026-08-04": 32
+      "2026-08-04": 33
     }
   },
   {
@@ -24,17 +24,17 @@
     "url": "https://app.calcofi.io/db-viz-cruise/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "db-viz-cruise",
-    "status": "down",
+    "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "99.46%",
+    "uptimeDay": "99.41%",
     "uptimeWeek": "99.92%",
     "uptimeMonth": "99.98%",
     "uptimeYear": "99.99%",
-    "time": 12460,
-    "timeDay": 11361,
-    "timeWeek": 12460,
-    "timeMonth": 12460,
-    "timeYear": 12460,
+    "time": 12366,
+    "timeDay": 11486,
+    "timeWeek": 12366,
+    "timeMonth": 12366,
+    "timeYear": 12366,
     "dailyMinutesDown": {
       "2026-08-04": 8
     }
@@ -44,19 +44,19 @@
     "url": "https://app.calcofi.io/ctd/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "ctd-viz",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.80%",
-    "uptimeWeek": "99.97%",
+    "uptimeDay": "99.74%",
+    "uptimeWeek": "99.96%",
     "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
-    "time": 11843,
-    "timeDay": 12825,
-    "timeWeek": 11723,
-    "timeMonth": 11723,
-    "timeYear": 11843,
+    "time": 11870,
+    "timeDay": 12495,
+    "timeWeek": 11772,
+    "timeMonth": 11772,
+    "timeYear": 11870,
     "dailyMinutesDown": {
-      "2026-08-04": 3
+      "2026-08-04": 4
     }
   },
   {
