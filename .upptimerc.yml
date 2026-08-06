@@ -97,6 +97,9 @@ sites:
     url: https://storage.calcofi.io/
 
   # --- GitHub Pages sites under calcofi.io/<repo>/ ---
+  - name: ctd-transects
+    slug: ctd-transects
+    url: https://calcofi.io/ctd-transects/
   - name: db-viz-station
     slug: db-viz-station
     url: https://calcofi.io/db-viz-station/
