@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/db-viz-hex/
-status: up
-code: 200
-responseTime: 717
-lastUpdated: 2026-08-05T23:58:57.429Z
+status: down
+code: 500
+responseTime: 22514
+lastUpdated: 2026-08-07T01:31:54.837Z
 startTime: 2026-06-09T08:27:26.026Z
 generator: Upptime <https://github.com/upptime/upptime>
