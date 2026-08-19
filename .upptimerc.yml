@@ -121,6 +121,9 @@ sites:
   - name: calcofi4db
     slug: calcofi4db
     url: https://calcofi.io/calcofi4db/
+  - name: calcofi4py
+    slug: calcofi4py
+    url: https://calcofi.io/calcofi4py/
   - name: ucla-monitoring-map
     slug: ucla-monitoring-map
     url: https://calcofi.io/2026-ucla-cal-ocean-coastal-monitoring-map/
