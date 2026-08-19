@@ -138,6 +138,13 @@ sites:
   - name: file-server
     slug: file-server
     url: https://file.calcofi.io/
+  # Database backup health: scripts/backup_status.sh (CalCOFI/server) writes this flag
+  # hourly only while the nightly pg dump -> gs://calcofi-backups ship is < 36 h old AND
+  # the weekly off-site restore drill is < 10 d old and passed. 404 = investigate.
+  # Details: https://file.calcofi.io/status/pg_backup.json
+  - name: db-backup
+    slug: db-backup
+    url: https://file.calcofi.io/status/pg_backup.ok
   - name: home-website
     slug: home-website
     url: https://calcofi.io/
