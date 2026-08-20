@@ -430,7 +430,7 @@
     "time": 158,
     "timeDay": 146,
     "timeWeek": 120,
-    "timeMonth": 141,
+    "timeMonth": 143,
     "timeYear": 158,
     "dailyMinutesDown": {
       "2026-06-18": 30,
@@ -456,7 +456,7 @@
     "time": 201,
     "timeDay": 201,
     "timeWeek": 175,
-    "timeMonth": 205,
+    "timeMonth": 203,
     "timeYear": 201,
     "dailyMinutesDown": {
       "2026-07-09": 31
@@ -494,7 +494,7 @@
     "time": 214,
     "timeDay": 215,
     "timeWeek": 106,
-    "timeMonth": 143,
+    "timeMonth": 145,
     "timeYear": 214,
     "dailyMinutesDown": {}
   }
