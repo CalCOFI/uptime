@@ -36,11 +36,11 @@ sites:
   # --- apps (https://app.calcofi.io/<app>/) ---
   - name: db-viz-hex
     slug: db-viz-hex
-    url: https://app.calcofi.io/db-viz-hex/
+    url: https://app.calcofi.io/hex/
     maxResponseTime: 30000
   - name: db-viz-cruise
     slug: db-viz-cruise
-    url: https://app.calcofi.io/db-viz-cruise/
+    url: https://app.calcofi.io/cruise/
     maxResponseTime: 30000
   - name: ctd-viz
     slug: ctd-viz
@@ -48,7 +48,7 @@ sites:
     maxResponseTime: 30000
   - name: oceano
     slug: oceano
-    url: https://app.calcofi.io/oceano/
+    url: https://app.calcofi.io/contour/
     maxResponseTime: 30000
   - name: pollutants
     slug: pollutants
@@ -102,7 +102,7 @@ sites:
     url: https://calcofi.io/ctd-transects/
   - name: db-viz-station
     slug: db-viz-station
-    url: https://calcofi.io/db-viz-station/
+    url: https://app.calcofi.io/station/
   - name: db-query
     slug: db-query
     url: https://calcofi.io/db-query/
