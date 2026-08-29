@@ -97,6 +97,9 @@ sites:
     url: https://storage.calcofi.io/
 
   # --- GitHub Pages sites under calcofi.io/<repo>/ ---
+  - name: explore
+    slug: explore
+    url: https://calcofi.io/explore/
   - name: ctd-transects
     slug: ctd-transects
     url: https://calcofi.io/ctd-transects/
