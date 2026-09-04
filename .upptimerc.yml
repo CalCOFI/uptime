@@ -161,9 +161,9 @@ status-website:
   introTitle: "CalCOFI.io Status"
   introMessage: "Live status of CalCOFI.io apps and services based on checks every 15 minutes."
   theme: dark
-  # the calcofi.io brand contract's logo + favicon (https://calcofi.io/brand/v1/)
-  logoUrl: https://calcofi.io/brand/v1/logo_calcofi.svg
-  favicon: https://calcofi.io/brand/v1/favicon-32x32.png
+  # the calcofi.io brand contract's logo + favicon (https://calcofi.io/brand/v2/)
+  logoUrl: https://calcofi.io/brand/v2/logo_calcofi.svg
+  favicon: https://calcofi.io/brand/v2/favicon-32x32.png
   navbar:
     - title: Home
       href: https://calcofi.io
@@ -175,7 +175,7 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  # Match the calcofi.io brand tokens (https://calcofi.io/brand/v1/theme.css: neutral
+  # Match the calcofi.io brand tokens (https://calcofi.io/brand/v2/theme.css: neutral
   # charcoal + #4dabf7 accent). Upptime's theme is fixed dark, so only the dark set.
   # :root:root beats the theme's :root regardless of stylesheet load order.
   # Status colors (up green / down red / degraded yellow) are left at semantic defaults.
