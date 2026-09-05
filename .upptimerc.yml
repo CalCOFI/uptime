@@ -97,6 +97,11 @@ sites:
     url: https://storage.calcofi.io/
 
   # --- GitHub Pages sites under calcofi.io/<repo>/ ---
+  # the dataset catalog (plan 2026-09-05): one generated page per dataset,
+  # CalCOFI.github.io's _plugins/datasets.rb — not a repo of its own
+  - name: datasets
+    slug: datasets
+    url: https://calcofi.io/datasets/
   - name: explore
     slug: explore
     url: https://calcofi.io/explore/
