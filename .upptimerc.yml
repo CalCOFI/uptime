@@ -46,10 +46,6 @@ sites:
     slug: ctd-viz
     url: https://app.calcofi.io/ctd/
     maxResponseTime: 30000
-  - name: oceano
-    slug: oceano
-    url: https://app.calcofi.io/contour/
-    maxResponseTime: 30000
   - name: pollutants
     slug: pollutants
     url: https://app.calcofi.io/pollutants/
