@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "db-viz-hex",
     "status": "down",
-    "uptime": "99.72%",
-    "uptimeDay": "95.58%",
-    "uptimeWeek": "99.37%",
-    "uptimeMonth": "99.85%",
-    "uptimeYear": "99.72%",
+    "uptime": "99.62%",
+    "uptimeDay": "86.33%",
+    "uptimeWeek": "98.05%",
+    "uptimeMonth": "99.55%",
+    "uptimeYear": "99.62%",
     "time": 11380,
     "timeDay": 13112,
     "timeWeek": 6969,
@@ -18,7 +18,7 @@
     "dailyMinutesDown": {
       "2026-08-04": 62,
       "2026-08-07": 239,
-      "2026-09-08": 64
+      "2026-09-08": 197
     }
   },
   {
@@ -27,18 +27,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "db-viz-cruise",
     "status": "down",
-    "uptime": "99.96%",
-    "uptimeDay": "95.92%",
-    "uptimeWeek": "99.42%",
-    "uptimeMonth": "99.87%",
-    "uptimeYear": "99.96%",
+    "uptime": "99.85%",
+    "uptimeDay": "86.66%",
+    "uptimeWeek": "98.09%",
+    "uptimeMonth": "99.56%",
+    "uptimeYear": "99.85%",
     "time": 10537,
     "timeDay": 11315,
     "timeWeek": 10282,
     "timeMonth": 10211,
     "timeYear": 10537,
     "dailyMinutesDown": {
-      "2026-09-08": 59
+      "2026-09-08": 192
     }
   },
   {
@@ -47,11 +47,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "ctd-viz",
     "status": "down",
-    "uptime": "99.92%",
-    "uptimeDay": "96.26%",
-    "uptimeWeek": "99.27%",
-    "uptimeMonth": "99.77%",
-    "uptimeYear": "99.92%",
+    "uptime": "99.82%",
+    "uptimeDay": "87.00%",
+    "uptimeWeek": "97.95%",
+    "uptimeMonth": "99.46%",
+    "uptimeYear": "99.82%",
     "time": 11038,
     "timeDay": 11847,
     "timeWeek": 12621,
@@ -60,7 +60,7 @@
     "dailyMinutesDown": {
       "2026-08-25": 29,
       "2026-09-06": 20,
-      "2026-09-08": 54
+      "2026-09-08": 187
     }
   },
   {
@@ -69,11 +69,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "pollutants",
     "status": "down",
-    "uptime": "99.95%",
-    "uptimeDay": "96.60%",
-    "uptimeWeek": "99.36%",
-    "uptimeMonth": "99.85%",
-    "uptimeYear": "99.95%",
+    "uptime": "99.85%",
+    "uptimeDay": "87.34%",
+    "uptimeWeek": "98.04%",
+    "uptimeMonth": "99.55%",
+    "uptimeYear": "99.85%",
     "time": 6057,
     "timeDay": 10743,
     "timeWeek": 11530,
@@ -81,7 +81,7 @@
     "timeYear": 6057,
     "dailyMinutesDown": {
       "2026-09-06": 16,
-      "2026-09-08": 49
+      "2026-09-08": 182
     }
   },
   {
@@ -90,18 +90,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "marmam",
     "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "96.94%",
-    "uptimeWeek": "99.56%",
-    "uptimeMonth": "99.90%",
-    "uptimeYear": "99.97%",
+    "uptime": "99.86%",
+    "uptimeDay": "87.68%",
+    "uptimeWeek": "98.24%",
+    "uptimeMonth": "99.60%",
+    "uptimeYear": "99.86%",
     "time": 2745,
     "timeDay": 2772,
     "timeWeek": 3024,
     "timeMonth": 2685,
     "timeYear": 2745,
     "dailyMinutesDown": {
-      "2026-09-08": 44
+      "2026-09-08": 177
     }
   },
   {
@@ -110,18 +110,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "saferseafood",
     "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "97.27%",
-    "uptimeWeek": "99.61%",
-    "uptimeMonth": "99.91%",
-    "uptimeYear": "99.97%",
+    "uptime": "99.87%",
+    "uptimeDay": "88.02%",
+    "uptimeWeek": "98.29%",
+    "uptimeMonth": "99.61%",
+    "uptimeYear": "99.87%",
     "time": 15491,
     "timeDay": 15350,
     "timeWeek": 16011,
     "timeMonth": 14776,
     "timeYear": 15491,
     "dailyMinutesDown": {
-      "2026-09-08": 39
+      "2026-09-08": 173
     }
   },
   {
@@ -130,18 +130,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "capstone",
     "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "97.61%",
-    "uptimeWeek": "99.66%",
-    "uptimeMonth": "99.92%",
-    "uptimeYear": "99.97%",
+    "uptime": "99.87%",
+    "uptimeDay": "88.36%",
+    "uptimeWeek": "98.34%",
+    "uptimeMonth": "99.62%",
+    "uptimeYear": "99.87%",
     "time": 22022,
     "timeDay": 22161,
     "timeWeek": 22322,
     "timeMonth": 21093,
     "timeYear": 22022,
     "dailyMinutesDown": {
-      "2026-09-08": 34
+      "2026-09-08": 168
     }
   },
   {
@@ -150,18 +150,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "ucsb-larvae-dashboard",
     "status": "down",
-    "uptime": "99.95%",
-    "uptimeDay": "97.95%",
-    "uptimeWeek": "99.71%",
-    "uptimeMonth": "99.93%",
-    "uptimeYear": "99.95%",
+    "uptime": "99.73%",
+    "uptimeDay": "88.70%",
+    "uptimeWeek": "98.39%",
+    "uptimeMonth": "99.63%",
+    "uptimeYear": "99.73%",
     "time": 3264,
     "timeDay": 3261,
     "timeWeek": 3287,
     "timeMonth": 3111,
     "timeYear": 3264,
     "dailyMinutesDown": {
-      "2026-09-08": 29
+      "2026-09-08": 163
     }
   },
   {
@@ -170,18 +170,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/erddap.calcofi.io.ico",
     "slug": "erddap",
     "status": "down",
-    "uptime": "99.96%",
-    "uptimeDay": "98.29%",
-    "uptimeWeek": "99.76%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.96%",
+    "uptime": "99.74%",
+    "uptimeDay": "89.03%",
+    "uptimeWeek": "98.43%",
+    "uptimeMonth": "99.64%",
+    "uptimeYear": "99.74%",
     "time": 568,
     "timeDay": 303,
     "timeWeek": 261,
     "timeMonth": 670,
     "timeYear": 568,
     "dailyMinutesDown": {
-      "2026-09-08": 25
+      "2026-09-08": 158
     }
   },
   {
@@ -190,18 +190,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/storage.calcofi.io.ico",
     "slug": "storage",
     "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "98.63%",
-    "uptimeWeek": "99.80%",
-    "uptimeMonth": "99.95%",
-    "uptimeYear": "99.97%",
+    "uptime": "99.75%",
+    "uptimeDay": "89.38%",
+    "uptimeWeek": "98.48%",
+    "uptimeMonth": "99.65%",
+    "uptimeYear": "99.75%",
     "time": 247,
     "timeDay": 310,
     "timeWeek": 251,
     "timeMonth": 242,
     "timeYear": 247,
     "dailyMinutesDown": {
-      "2026-09-08": 20
+      "2026-09-08": 153
     }
   },
   {
@@ -263,19 +263,19 @@
     "url": "https://app.calcofi.io/station/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "db-viz-station",
-    "status": "down",
-    "uptime": "99.98%",
-    "uptimeDay": "98.97%",
-    "uptimeWeek": "99.85%",
-    "uptimeMonth": "99.97%",
-    "uptimeYear": "99.98%",
-    "time": 192,
-    "timeDay": 543,
-    "timeWeek": 275,
-    "timeMonth": 177,
-    "timeYear": 192,
+    "status": "up",
+    "uptime": "99.78%",
+    "uptimeDay": "90.63%",
+    "uptimeWeek": "98.66%",
+    "uptimeMonth": "99.69%",
+    "uptimeYear": "99.78%",
+    "time": 564,
+    "timeDay": 6876,
+    "timeWeek": 2026,
+    "timeMonth": 661,
+    "timeYear": 564,
     "dailyMinutesDown": {
-      "2026-09-08": 15
+      "2026-09-08": 135
     }
   },
   {
@@ -464,11 +464,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "shiny-server",
     "status": "down",
-    "uptime": "97.82%",
-    "uptimeDay": "99.30%",
-    "uptimeWeek": "99.90%",
-    "uptimeMonth": "99.98%",
-    "uptimeYear": "97.82%",
+    "uptime": "97.72%",
+    "uptimeDay": "90.05%",
+    "uptimeWeek": "98.58%",
+    "uptimeMonth": "99.67%",
+    "uptimeYear": "97.72%",
     "time": 158,
     "timeDay": 196,
     "timeWeek": 150,
@@ -482,7 +482,7 @@
       "2026-07-01": 552,
       "2026-07-09": 41,
       "2026-07-25": 21,
-      "2026-09-08": 10
+      "2026-09-08": 143
     }
   },
   {
@@ -491,11 +491,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/file.calcofi.io.ico",
     "slug": "file-server",
     "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "99.64%",
-    "uptimeWeek": "99.95%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.97%",
+    "uptime": "99.87%",
+    "uptimeDay": "90.39%",
+    "uptimeWeek": "98.63%",
+    "uptimeMonth": "99.68%",
+    "uptimeYear": "99.87%",
     "time": 205,
     "timeDay": 249,
     "timeWeek": 220,
@@ -503,7 +503,7 @@
     "timeYear": 205,
     "dailyMinutesDown": {
       "2026-07-09": 31,
-      "2026-09-08": 5
+      "2026-09-08": 138
     }
   },
   {
@@ -512,18 +512,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/file.calcofi.io.ico",
     "slug": "db-backup",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.53%",
+    "uptimeDay": "90.72%",
+    "uptimeWeek": "98.67%",
+    "uptimeMonth": "99.53%",
+    "uptimeYear": "99.53%",
     "time": 164,
     "timeDay": 309,
     "timeWeek": 169,
     "timeMonth": 164,
     "timeYear": 164,
     "dailyMinutesDown": {
-      "2026-09-08": 0
+      "2026-09-08": 134
     }
   },
   {
