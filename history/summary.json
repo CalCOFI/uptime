@@ -130,19 +130,20 @@
     "url": "https://app.calcofi.io/capstone/",
     "icon": "https://icons.duckduckgo.com/ip3/app.calcofi.io.ico",
     "slug": "capstone",
-    "status": "up",
+    "status": "degraded",
     "uptime": "99.85%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.85%",
-    "time": 21919,
-    "timeDay": 22494,
-    "timeWeek": 22176,
-    "timeMonth": 22050,
-    "timeYear": 21919,
+    "time": 22120,
+    "timeDay": 33862,
+    "timeWeek": 25058,
+    "timeMonth": 22774,
+    "timeYear": 22120,
     "dailyMinutesDown": {
-      "2026-09-08": 314
+      "2026-09-08": 314,
+      "2026-11-06": 0
     }
   },
   {
