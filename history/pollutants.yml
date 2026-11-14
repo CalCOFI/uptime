@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/pollutants/
-status: down
-code: 500
-responseTime: 3911
-lastUpdated: 2026-11-14T16:17:12.067Z
+status: up
+code: 200
+responseTime: 14402
+lastUpdated: 2026-11-14T17:16:44.475Z
 startTime: 2026-06-09T08:27:45.334Z
 generator: Upptime <https://github.com/upptime/upptime>
