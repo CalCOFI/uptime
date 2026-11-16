@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/cruise/
-status: up
-code: 200
-responseTime: 11063
-lastUpdated: 2026-11-16T20:55:46.096Z
+status: degraded
+code: 502
+responseTime: 45152
+lastUpdated: 2026-11-16T21:20:36.023Z
 startTime: 2026-06-09T08:26:57.061Z
 generator: Upptime <https://github.com/upptime/upptime>
