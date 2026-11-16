@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/SaferSeafood/
-status: up
-code: 200
-responseTime: 16340
-lastUpdated: 2026-11-16T21:36:09.469Z
+status: degraded
+code: 502
+responseTime: 45192
+lastUpdated: 2026-11-16T23:43:36.822Z
 startTime: 2026-06-09T08:27:49.256Z
 generator: Upptime <https://github.com/upptime/upptime>
