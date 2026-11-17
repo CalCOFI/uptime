@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/hex/
-status: up
-code: 200
-responseTime: 14188
-lastUpdated: 2026-11-17T18:59:42.180Z
+status: degraded
+code: 502
+responseTime: 45088
+lastUpdated: 2026-11-17T19:42:08.569Z
 startTime: 2026-06-09T08:27:26.026Z
 generator: Upptime <https://github.com/upptime/upptime>
