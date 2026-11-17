@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/marmam/
-status: up
-code: 200
-responseTime: 2908
-lastUpdated: 2026-11-17T22:53:43.349Z
+status: degraded
+code: 502
+responseTime: 45186
+lastUpdated: 2026-11-17T23:41:20.444Z
 startTime: 2026-06-09T08:27:42.348Z
 generator: Upptime <https://github.com/upptime/upptime>
