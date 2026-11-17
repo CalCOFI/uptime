@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/capstone/
-status: up
-code: 200
-responseTime: 520
-lastUpdated: 2026-11-17T18:58:16.472Z
+status: degraded
+code: 502
+responseTime: 45171
+lastUpdated: 2026-11-17T19:14:01.871Z
 startTime: 2026-06-09T08:28:04.921Z
 generator: Upptime <https://github.com/upptime/upptime>
