@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/ctd/
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-11-17T08:18:09.602Z
+status: degraded
+code: 502
+responseTime: 46166
+lastUpdated: 2026-11-17T19:04:10.290Z
 startTime: 2026-06-09T08:42:53.682Z
 generator: Upptime <https://github.com/upptime/upptime>
