@@ -1,7 +1,7 @@
 url: https://app.calcofi.io/2026-ucsb-larvae-dashboard/
-status: up
-code: 200
-responseTime: 4890
-lastUpdated: 2026-11-17T18:58:24.488Z
+status: degraded
+code: 502
+responseTime: 45256
+lastUpdated: 2026-11-17T19:16:32.058Z
 startTime: 2026-07-28T14:41:42.558Z
 generator: Upptime <https://github.com/upptime/upptime>
